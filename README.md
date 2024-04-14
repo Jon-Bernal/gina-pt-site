@@ -25,6 +25,12 @@ npm run dev
 npm run dev -- --open
 ```
 
+## Useful Documentation
+
+### Components Library
+
+(flowbite)[https://flowbite-svelte.com/docs/pages/introduction]
+
 ## Building
 
 To create a production version of your app:
