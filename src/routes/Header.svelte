@@ -1,6 +1,7 @@
-<script>
+<script lang="ts">
 	import { page } from '$app/stores';
 	import logo from '$lib/assets/fun_prism.png';
+	import { Navbar, NavBrand, NavUl, NavLi, NavHamburger } from "flowbite-svelte";
 	// import FaRegUser from 'svelte-icons/fa/FaRegUser.svelte'
 	import { Button, Dropdown, DropdownItem, DropdownDivider, DropdownHeader } from 'flowbite-svelte';
 </script>
@@ -12,7 +13,7 @@
 				<img src={logo} alt="Prism PT Logo" height="100" width="100" class="logo_img" />
 				<h2 class="logo_text">Prism PT</h2>
 			</div>
-			<Button class="account_btn w-3 h-3 ms-2 text-white dark:text-white">
+			<!-- <Button class="account_btn w-3 h-3 ms-2 text-white dark:text-white">
 				<svg class="account_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
 					><path
 						stroke-width="0"
@@ -20,17 +21,40 @@
 						d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"
 					></path></svg
 				>
-			</Button>
-			<Dropdown>
+			</Button> -->
+			<!-- <Dropdown>
 				<DropdownItem>Account</DropdownItem>
-			</Dropdown>
+			</Dropdown> -->
 		</div>
+
+		<!-- <Navbar let:hidden let:toggle>
+			<NavBrand href="/">
+				<img
+					src="https://flowbite.com/docs/images/logo.svg"
+					class="mr-3 h-6 sm:h-9"
+					alt="Flowbite Logo"
+				/>
+				<span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+					Flowbite
+				</span>
+			</NavBrand>
+			<NavHamburger on:click={toggle} />
+			<NavUl {hidden}>
+				<NavLi href="/" active={true}>Home</NavLi>
+				<NavLi href="/about">About</NavLi>
+				<NavLi href="/contact">Contact Me</NavLi>
+				<NavLi href="/faq">FAQ</NavLi>
+				<NavLi href="/blog">Blog</NavLi>
+				<NavLi href="/Videos">Videos</NavLi>
+			</NavUl>
+		</Navbar> -->
+		
 		<nav>
 			<a href="/">Home</a>
 			<a href="/about">About</a>
-			<a href="/contact">Contact Me</a>
-			<a href="blog">Blog</a>
-			<a href="/videos">Videos</a>
+			<!-- <a href="/contact">Contact Me</a> -->
+			<!-- <a href="blog">Blog</a> -->
+			<!-- <a href="/videos">Videos</a> -->
 			<a href="/faq">FAQ</a>
 		</nav>
 	</div>
@@ -65,13 +89,13 @@
 		font-size: 32px;
 		font-weight: 300;
 	}
-	.account_btn {
+	/* .account_btn {
 		height: var(--logo-height);
 		width: auto;
 		background: none;
 		border: none;
 		stroke-width: 1px;
-	}
+	} */
 	.account_svg {
 		height: 45px;
 		width: auto;
