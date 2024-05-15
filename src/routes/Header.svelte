@@ -96,10 +96,10 @@
 		border: none;
 		stroke-width: 1px;
 	} */
-	.account_svg {
+	/* .account_svg {
 		height: 45px;
 		width: auto;
-	}
+	} */
 
 	nav {
 		display: flex;
