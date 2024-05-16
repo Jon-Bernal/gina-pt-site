@@ -17,7 +17,7 @@ npm run dev -- --open
 
 ### Components Library
 
-(shadcn-svelte)[https://www.shadcn-svelte.com/docs/components]
+(SvelteUI)[https://svelteui.dev/core/accordion]
 
 ## Building
 

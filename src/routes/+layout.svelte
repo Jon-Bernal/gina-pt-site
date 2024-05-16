@@ -11,7 +11,7 @@
 		<main>
 			<slot />
 		</main>
-		<Footer />
+		<!-- <Footer /> -->
 	</div>
 </SvelteUIProvider>
 
