@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import logo from '$lib/assets/fun_prism.png';
-	import { Navbar, NavBrand, NavUl, NavLi, NavHamburger } from 'flowbite-svelte';
+	// import { Navbar, NavBrand, NavUl, NavLi, NavHamburger } from 'flowbite-svelte';
 	// import FaRegUser from 'svelte-icons/fa/FaRegUser.svelte'
-	import { Button, Dropdown, DropdownItem, DropdownDivider, DropdownHeader } from 'flowbite-svelte';
+	// import { Button, Dropdown, DropdownItem, DropdownDivider, DropdownHeader } from 'flowbite-svelte';
 </script>
 
 <header>

@@ -1,11 +1,10 @@
 <script lang="ts">
-	import * as Accordion from '$lib/components/ui/accordion/index';
 </script>
 
 <main>
 	<h2>FAQ</h2>
 	<div class="faq">
-		<Accordion.Root class="w-full sm:max-w-[70%]">
+		<!-- <Accordion.Root class="w-full sm:max-w-[70%]">
 			<Accordion.Item value="item-1">
 				<Accordion.Trigger>What Does a Physical Therapist Do?</Accordion.Trigger>
 				<Accordion.Content>
@@ -134,7 +133,7 @@
 					</p></Accordion.Content
 				>
 			</Accordion.Item>
-		</Accordion.Root>
+		</Accordion.Root> -->
 	</div>
 </main>
 
