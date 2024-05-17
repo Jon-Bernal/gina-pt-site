@@ -1,6 +1,13 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import logo from '$lib/assets/fun_prism.png';
+
+	// let currentPath;
+	// onMount(() => {
+	// 	currentPath = window.location.pathname;
+	// });
+	// export let title;
+	// export let href;
 </script>
 
 <header>
@@ -13,6 +20,7 @@
 		</div>
 
 		<nav>
+			<!-- <a href="/" class:active={$page.path.includes(href)}>Home</a> -->
 			<a href="/">Home</a>
 			<a href="/about">About</a>
 			<!-- <a href="/contact">Contact Me</a> -->
@@ -52,8 +60,9 @@
 		font-weight: 300;
 	}
 	nav {
+		box-sizing: border-box;
 		display: flex;
-		padding: 20px;
+		padding: 20px 0;
 		width: 100%;
 		border-top: 1px solid black;
 	}

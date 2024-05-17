@@ -25,9 +25,8 @@
 				alt="Gina"
 				fit="contain"
 				radius="md"
-				width={300}
-				height={300}
-				style="padding:20px;"
+				width={200}
+				style="margin: 0 0 0 3rem;"
 			/>
 		</div>
 	</section>
@@ -70,7 +69,7 @@
 				radius="md"
 				width={300}
 				height={225}
-				style="padding:20px;"
+				style="margin: 20px;"
 			/>
 		</div>
 		<div class="right">
