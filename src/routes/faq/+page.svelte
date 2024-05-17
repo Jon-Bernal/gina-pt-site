@@ -55,10 +55,10 @@
 		</p>
 	</Accordion.Item>
 
-	<Accordion.Item value="typescript">
+	<!-- <Accordion.Item value="typescript">
 		<div slot="control">Typescript Based</div>
 		Build type safe applications...
-	</Accordion.Item>
+	</Accordion.Item> -->
 
 	<Accordion.Item value="payment">
 		<div slot="control">What are my options for payment?</div>
