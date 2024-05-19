@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import logo from '$lib/assets/fun_prism.png';
+	import logo from '$lib/assets/logo.svg';
+	import { Image } from '@svelteuidev/core';
 
 	// let currentPath;
 	// onMount(() => {
@@ -13,10 +14,20 @@
 <header>
 	<div class="header">
 		<div class="logo_row">
-			<div class="logo">
-				<img src={logo} alt="Prism PT Logo" height="100" width="100" class="logo_img" />
-				<h2 class="logo_text">Prism PT</h2>
-			</div>
+			<svg height="75px" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+				<!-- Right Side -->
+				<polygon points="0,0 512,128 512,0" style="fill:#55b6fe;stroke:#55b6fe;stroke-width:0" />
+				<polygon points="0,0 512,256 512,128" style="fill:#1a5ab1;stroke:#1a5ab1;stroke-width:0" />
+				<polygon points="0,0 512,256 512,384" style="fill:#0f115d;stroke:#0f115d;stroke-width:0" />
+				<polygon points="0,0 512,512 512,384" style="fill:#c7cfa8;stroke:#c7cfa8;stroke-width:0" />
+				<!-- Bottom -->
+				<polygon points="0,0 512,512 384,512" style="fill:#c3bf53;stroke:#c3bf53;stroke-width:0" />
+				<polygon points="0,0 256,512 384,512" style="fill:#c28944;stroke:#c28944;stroke-width:0" />
+				<polygon points="0,0 128,512 256,512" style="fill:#c87736;stroke:#c87736;stroke-width:0" />
+				<polygon points="0,0 0,512 128,512" style="fill:#a32f3c;stroke:#a32f3c;stroke-width:0" />
+				<rect width="512" height="512" rx="20" style="fill:none;stroke:black;stroke-width: 20; " />
+			</svg>
+			<h2 class="logo_text">Prism Physical Therapy</h2>
 		</div>
 
 		<nav>
@@ -38,20 +49,12 @@
 	}
 	.logo_row {
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-start;
 		align-items: center;
 		height: 100%;
 		padding: 0 20px;
 		box-shadow: var(--box-shadow-lvl1);
 		--logo-height: 60px;
-	}
-	.logo {
-		display: flex;
-		align-items: center;
-	}
-	.logo_img {
-		height: var(--logo-height);
-		width: auto;
 	}
 	.logo_text {
 		font-family: var(--font);
