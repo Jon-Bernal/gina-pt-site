@@ -1,6 +1,6 @@
 <script>
 	import { enhance } from '$app/forms';
-	import { Button, Input } from '@svelteuidev/core';
+	import { Button, Checkbox, Input, Radio, RadioGroup } from '@svelteuidev/core';
 	const inputOverride = {
 		width: '100%',
 		marginBottom: '20px',
@@ -32,6 +32,15 @@
 		placeholder="example@email.com"
 		override={inputOverride}
 	/>
+
+	<label for="email"> Full Name: </label>
+	<Input type="text" name="name" id="name" placeholder="Benjamin Bernal" override={inputOverride} />
+
+	<RadioGroup name="returning" id="returning">
+		<label for="returning">Are you a returning patient? </label>
+		<Radio>Yes</Radio>
+		<Radio>No</Radio>
+	</RadioGroup>
 	<Button type="submit">Subscribe</Button>
 </form>
 
