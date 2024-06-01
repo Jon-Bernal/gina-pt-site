@@ -3,6 +3,7 @@
 	import Footer from './Footer.svelte';
 	// import './styles.css'
 	import { SvelteUIProvider } from '@svelteuidev/core';
+	import '../theme.css';
 </script>
 
 <SvelteUIProvider withNormalizeCSS withGlobalStyles>
@@ -36,5 +37,8 @@
 	}
 	* {
 		box-sizing: border-box !important;
+	}
+	main {
+		padding: 0 10%;
 	}
 </style>

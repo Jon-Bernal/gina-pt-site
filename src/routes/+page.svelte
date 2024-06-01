@@ -36,11 +36,20 @@
 	<label for="email"> Full Name: </label>
 	<Input type="text" name="name" id="name" placeholder="Benjamin Bernal" override={inputOverride} />
 
-	<RadioGroup name="returning" id="returning">
+	<RadioGroup
+		description={'Are you a returning patient?'}
+		id="returning"
+		name="returning"
+		items={[
+			{ label: 'Yes', value: 'yes' },
+			{ label: 'No', value: 'no' }
+		]}
+	/>
+	<!-- <RadioGroup name="returning" id="returning" >
 		<label for="returning">Are you a returning patient? </label>
 		<Radio>Yes</Radio>
 		<Radio>No</Radio>
-	</RadioGroup>
+	</RadioGroup> -->
 	<Button type="submit">Subscribe</Button>
 </form>
 
