@@ -7,7 +7,7 @@
 		"stop": "npx supabase stop",
 		"prisma:gen": "prisma generate",
 		"prisma:push": "prisma db push",
-		"build": "vite build",
+		"build": "npx prisma generate; vite build",
 		"preview": "vite preview",
 		"test": "npm run test:integration && npm run test:unit",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
