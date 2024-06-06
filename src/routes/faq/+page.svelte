@@ -13,7 +13,7 @@
 	style="width:80%; margin: 0 auto;"
 >
 	<Accordion.Item value="WhatIDo">
-		<div slot="control">What Does a Physical Therapist Do?</div>
+		<div slot="control" style="font-size: 1.25rem;">What Does a Physical Therapist Do?</div>
 		<p>
 			I provide therapy in orthopedics rehab, whether you are recovering from an injury or are
 			wanting to gain the ability to do more physical activity. This includes exercise that focuses
@@ -33,7 +33,7 @@
 	</Accordion.Item>
 
 	<Accordion.Item value="Counterstrain">
-		<div slot="control">What is Fascial Counterstrain?</div>
+		<div slot="control" style="font-size: 1.25rem;">What is Fascial Counterstrain?</div>
 		<p>
 			Fascial Counterstrain (FCS) is the application of hands-on manual therapy to release
 			contractions of your tissues, such as muscles, ligaments, and nerves. When there is tissue
@@ -45,7 +45,7 @@
 	</Accordion.Item>
 
 	<Accordion.Item value="Insurance">
-		<div slot="control">Do you take insurance or Medicare?</div>
+		<div slot="control" style="font-size: 1.25rem;">Do you take insurance or Medicare?</div>
 		<p>
 			At this time, I do not accept insurance or Medicare. I am however happy to provide a superbill
 			so that you may request reimbursement from your insurance provider. Medicare rules state that
@@ -61,7 +61,7 @@
 	</Accordion.Item> -->
 
 	<Accordion.Item value="payment">
-		<div slot="control">What are my options for payment?</div>
+		<div slot="control" style="font-size: 1.25rem;">What are my options for payment?</div>
 		<p>
 			Payment is due at the time of service for all appointments, and I can provide a superbill upon
 			request. For those with a Health Savings Account (HSA) or a Flexible Spending Account (FSA)
@@ -71,7 +71,9 @@
 	</Accordion.Item>
 
 	<Accordion.Item value="privatePay">
-		<div slot="control">Why choose to pay privately for physical therapy?</div>
+		<div slot="control" style="font-size: 1.25rem;">
+			Why choose to pay privately for physical therapy?
+		</div>
 		<p>
 			I have chosen to provide physical therapy out of network in order to stay aligned with my
 			values and ethics for patient care. This allows me to address a person’s needs as they arise
@@ -84,12 +86,12 @@
 	</Accordion.Item>
 
 	<Accordion.Item value="rates">
-		<div slot="control">What are your rates?</div>
+		<div slot="control" style="font-size: 1.25rem;">What are your rates?</div>
 		<p>All of my sessions, both evaluations and treatments, are 90 minutes for $225.</p>
 	</Accordion.Item>
 
 	<Accordion.Item value="referral">
-		<div slot="control">Do I need a referral for physical therapy?</div>
+		<div slot="control" style="font-size: 1.25rem;">Do I need a referral for physical therapy?</div>
 		<p>
 			You do not need a referral to see a physical therapist in the state of Washington as we are a
 			“direct access” state. If you plan to submit for reimbursement to your insurance company, you
@@ -100,7 +102,7 @@
 	</Accordion.Item>
 
 	<Accordion.Item value="approach">
-		<div slot="control">What is your approach to patient care?</div>
+		<div slot="control" style="font-size: 1.25rem;">What is your approach to patient care?</div>
 		<p>
 			My approach is to appreiciate all aspects of healthcare. While I am only licensed to provide
 			physical therapy, I will recommend other types of therapy and practitioners of these therapies
@@ -114,7 +116,7 @@
 	</Accordion.Item>
 
 	<Accordion.Item value="fit">
-		<div slot="control">Are we a good fit to work together?</div>
+		<div slot="control" style="font-size: 1.25rem;">Are we a good fit to work together?</div>
 		<p>
 			I look at physical therapy as a team effort. I will do everything in my power to help someone
 			heal, but I cannot do it alone. If the patient is unable to fully participate (within reason),

@@ -5,6 +5,8 @@
 	"scripts": {
 		"dev": "npx supabase start; vite dev",
 		"stop": "npx supabase stop",
+		"prisma:gen": "prisma generate",
+		"prisma:push": "prisma db push",
 		"build": "vite build",
 		"preview": "vite preview",
 		"test": "npm run test:integration && npm run test:unit",
@@ -33,7 +35,7 @@
 		"prettier": "^3.1.1",
 		"prettier-plugin-svelte": "^3.1.2",
 		"prettier-plugin-tailwindcss": "^0.5.1",
-		"prisma": "^5.14.0",
+		"prisma": "^5.15.0",
 		"svelte": "^4.2.7",
 		"svelte-check": "^3.6.0",
 		"tslib": "^2.4.1",
@@ -44,6 +46,7 @@
 	"type": "module",
 	"dependencies": {
 		"@popperjs/core": "^2.11.8",
+		"@prisma/client": "^5.15.0",
 		"@svelteuidev/composables": "^0.15.6",
 		"@svelteuidev/core": "^0.15.6",
 		"@svelteuidev/dates": "^0.15.6",
