@@ -15,7 +15,7 @@ export const actions: Actions = {
 			console.log('email :>> ', email);
 			console.log('name :>> ', name);
 			console.log('returning :>> ', returning);
-			db(() => prisma.customer.create({ data: { email, name } }));
+			db.customer.create({ data: { email, name } });
 		} catch (error) {
 			// Todo: send email about a problem to Yo self
 			console.log('send email that there was a problem');
