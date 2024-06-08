@@ -7,6 +7,8 @@
 		marginLeft: '20px',
 		padding: '0.5rem'
 	};
+
+	let missing = true;
 </script>
 
 <h2>Pardon our dust!</h2>
@@ -29,7 +31,7 @@
 		type="email"
 		name="email"
 		id="email"
-		placeholder="example@email.com"
+		placeholder="Benjamin@example.com"
 		override={inputOverride}
 	/>
 
@@ -37,39 +39,35 @@
 	<Input type="text" name="name" id="name" placeholder="Benjamin Bernal" override={inputOverride} />
 
 	<RadioGroup
-		description={'Are you a returning patient?'}
+		label={'Are you a returning patient?'}
 		id="returning"
 		name="returning"
+		style={'align-self: start'}
 		items={[
 			{ label: 'Yes', value: 'yes' },
 			{ label: 'No', value: 'no' }
 		]}
 	/>
-	<!-- <RadioGroup name="returning" id="returning" >
-		<label for="returning">Are you a returning patient? </label>
-		<Radio>Yes</Radio>
-		<Radio>No</Radio>
-	</RadioGroup> -->
 	<Button type="submit">Subscribe</Button>
 </form>
 
 <style>
 	form {
-		margin: 0 auto;
+		margin: 40px auto;
 		padding: 20px;
 		border: 1px solid black;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
 		border-radius: 6px;
-		margin: 40px;
 		max-width: 500px;
 	}
 	label {
 		align-self: flex-start;
 		margin-bottom: 10px;
 	}
-	/* form > button {
-		width: max-content;
-	} */
+	button {
+		align-self: end;
+		margin-top: 40px;
+	}
 </style>
