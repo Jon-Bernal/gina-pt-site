@@ -1,34 +1,38 @@
 <script>
 	import gina from '$lib/assets/gina.jpg';
 	import jonGina from '$lib/assets/jon_gina.jpg';
-	import { AspectRatio, Container, Image } from '@svelteuidev/core';
+	import { AspectRatio, Container, Grid, Image } from '@svelteuidev/core';
 </script>
 
 <Container size="md">
-	<section class="sideBySide">
-		<div class="left">
-			<h3>Education</h3>
-			<p>
-				I began my education with a BS in Athletic Training, where I learned first hand the
-				importance of maintaining a person’s physical ability and how to manage acute injuries. I
-				then earned her Masters in Sports Management to better understand the business side of
-				athletics and clinic management. It was during this time that I discovered my love of
-				physical therapy through a chance conversation with a PT, and returned to undergrad to
-				complete prerequisites to apply to PT school. I finished my education with a Doctorate of
-				Physical Therapy in 2018 upon completing clinical rotations in post-surgical rehab,
-				inpatient acute care, outpatient orthopedics, and outpatient neurological rehab.
-			</p>
-		</div>
-		<div class="right">
-			<Image
-				src={gina}
-				alt="Gina"
-				fit="contain"
-				radius="md"
-				width={200}
-				style="margin: 0 0 0 3rem;"
-			/>
-		</div>
+	<section class="topImage">
+		<Grid justify="space-between">
+			<Grid.Col span={12}>
+				<h3>Education</h3>
+			</Grid.Col>
+			<Grid.Col span={9}>
+				<p style="margin-top: 0; padding-top: 0;">
+					I began my education with a BS in Athletic Training, where I learned first hand the
+					importance of maintaining a person’s physical ability and how to manage acute injuries. I
+					then earned her Masters in Sports Management to better understand the business side of
+					athletics and clinic management. It was during this time that I discovered my love of
+					physical therapy through a chance conversation with a PT, and returned to undergrad to
+					complete prerequisites to apply to PT school. I finished my education with a Doctorate of
+					Physical Therapy in 2018 upon completing clinical rotations in post-surgical rehab,
+					inpatient acute care, outpatient orthopedics, and outpatient neurological rehab.
+				</p>
+			</Grid.Col>
+			<Grid.Col span={3}>
+				<Image
+					src={gina}
+					alt="Gina"
+					fit="contain"
+					radius="md"
+					width={200}
+					style="margin-left: auto;"
+				/>
+			</Grid.Col>
+		</Grid>
 	</section>
 	<section>
 		<h3>Continuing Education and Career Goals</h3>
@@ -88,12 +92,4 @@
 	section {
 		margin-top: 3rem;
 	}
-	.sideBySide {
-		display: flex;
-		flex-direction: row;
-	}
-	/* .left {
-		width: 50%;
-		padding: 20px;
-	} */
 </style>
