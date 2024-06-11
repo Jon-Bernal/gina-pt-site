@@ -36,11 +36,15 @@
 			on:click={() => (currentPath = '/about')}
 			data-active={`${currentPath === '/about'}`}>About</a
 		>
-		<!-- <a href="/contact">Contact Me</a> -->
 		<!-- <a href="blog">Blog</a> -->
 		<!-- <a href="/videos">Videos</a> -->
 		<a href="/faq" on:click={() => (currentPath = '/faq')} data-active={`${currentPath === '/faq'}`}
 			>FAQ</a
+		>
+		<a
+			href="/contact"
+			on:click={() => (currentPath = '/contact')}
+			data-active={`${currentPath === '/contact'}`}>Contact Me</a
 		>
 	</nav>
 </header>
