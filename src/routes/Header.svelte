@@ -41,11 +41,11 @@
 		<a href="/faq" on:click={() => (currentPath = '/faq')} data-active={`${currentPath === '/faq'}`}
 			>FAQ</a
 		>
-		<a
+		<!-- <a
 			href="/contact"
 			on:click={() => (currentPath = '/contact')}
 			data-active={`${currentPath === '/contact'}`}>Contact Me</a
-		>
+		> -->
 	</nav>
 </header>
 
