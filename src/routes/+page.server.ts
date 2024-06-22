@@ -19,6 +19,7 @@ export const actions: Actions = {
 		} catch (error) {
 			// Todo: send email about a problem to Yo self
 			console.log('send email that there was a problem');
+			console.log('subscription sign up error :>> ', error);
 		}
 	}
 };
