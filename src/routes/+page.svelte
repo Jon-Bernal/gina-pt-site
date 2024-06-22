@@ -19,7 +19,7 @@
 	updates, please enter your information below. We look forward to working with you soon.
 </p>
 
-<form
+<!-- <form
 	action="?/submit"
 	method="POST"
 	use:enhance={() => {
@@ -50,7 +50,7 @@
 		]}
 	/>
 	<Button type="submit">Subscribe</Button>
-</form>
+</form> -->
 
 <style>
 	form {
