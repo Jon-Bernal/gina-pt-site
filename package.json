@@ -3,8 +3,11 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
+		"dev": "npx supabase start; vite dev",
+		"stop": "npx supabase stop",
+		"prisma:gen": "prisma generate",
+		"prisma:push": "prisma db push",
+		"build": "npx prisma generate; npx prisma migrate deploy; vite build",
 		"preview": "vite preview",
 		"test": "npm run test:integration && npm run test:unit",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -14,6 +17,9 @@
 		"test:integration": "playwright test",
 		"test:unit": "vitest"
 	},
+	"prisma": {
+		"seed": "ts-node prisma/seed.ts"
+	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
 		"@sveltejs/adapter-auto": "^3.0.0",
@@ -22,13 +28,14 @@
 		"@types/eslint": "8.56.0",
 		"@typescript-eslint/eslint-plugin": "^6.0.0",
 		"@typescript-eslint/parser": "^6.0.0",
+		"autoprefixer": "^10.4.16",
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.35.1",
-		"flowbite": "^2.3.0",
-		"flowbite-svelte": "^0.44.24",
 		"prettier": "^3.1.1",
 		"prettier-plugin-svelte": "^3.1.2",
+		"prettier-plugin-tailwindcss": "^0.5.1",
+		"prisma": "^5.15.0",
 		"svelte": "^4.2.7",
 		"svelte-check": "^3.6.0",
 		"tslib": "^2.4.1",
@@ -38,6 +45,16 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"svelte-icons": "^2.1.0"
+		"@popperjs/core": "^2.11.8",
+		"@prisma/client": "^5.15.0",
+		"@sendgrid/mail": "^8.1.3",
+		"@svelteuidev/composables": "^0.15.6",
+		"@svelteuidev/core": "^0.15.6",
+		"@svelteuidev/dates": "^0.15.6",
+		"clsx": "^2.1.1",
+		"dayjs": "^1.11.11",
+		"radix-icons-svelte": "^1.2.1",
+		"svelte-icons": "^2.1.0",
+		"svelte-radix": "^1.1.0"
 	}
 }

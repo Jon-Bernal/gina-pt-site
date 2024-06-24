@@ -1,92 +1,105 @@
-<script>
+<script lang="ts">
 	import { page } from '$app/stores';
-	import logo from '$lib/assets/fun_prism.png';
-	// import FaRegUser from 'svelte-icons/fa/FaRegUser.svelte'
-	import { Button, Dropdown, DropdownItem, DropdownDivider, DropdownHeader } from 'flowbite-svelte';
+	import logo from '$lib/assets/logo.svg';
+	import { Image } from '@svelteuidev/core';
+	import { onMount } from 'svelte';
+
+	let currentPath: string;
+	onMount(() => {
+		currentPath = window.location.pathname;
+		console.log('currentPath :>> ', currentPath);
+	});
 </script>
 
 <header>
-	<div class="header">
-		<div class="logo_row">
-			<div class="logo">
-				<img src={logo} alt="Prism PT Logo" height="100" width="100" class="logo_img" />
-				<h2 class="logo_text">Prism PT</h2>
-			</div>
-			<Button class="account_btn w-3 h-3 ms-2 text-white dark:text-white">
-				<svg class="account_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-					><path
-						stroke-width="0"
-						stroke="red"
-						d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"
-					></path></svg
-				>
-			</Button>
-			<Dropdown>
-				<DropdownItem>Account</DropdownItem>
-			</Dropdown>
-		</div>
-		<nav>
-			<a href="/">Home</a>
-			<a href="/about">About</a>
-			<a href="/contact">Contact Me</a>
-			<a href="blog">Blog</a>
-			<a href="/videos">Videos</a>
-			<a href="/faq">FAQ</a>
-		</nav>
+	<div class="logo">
+		<svg height="75px" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+			<!-- Right Side -->
+			<polygon points="0,0 512,128 512,0" style="fill:#55b6fe;stroke:#55b6fe;stroke-width:0" />
+			<polygon points="0,0 512,256 512,128" style="fill:#1a5ab1;stroke:#1a5ab1;stroke-width:0" />
+			<polygon points="0,0 512,256 512,384" style="fill:#0f115d;stroke:#0f115d;stroke-width:0" />
+			<polygon points="0,0 512,512 512,384" style="fill:#c7cfa8;stroke:#c7cfa8;stroke-width:0" />
+			<!-- Bottom -->
+			<polygon points="0,0 512,512 384,512" style="fill:#c3bf53;stroke:#c3bf53;stroke-width:0" />
+			<polygon points="0,0 256,512 384,512" style="fill:#c28944;stroke:#c28944;stroke-width:0" />
+			<polygon points="0,0 128,512 256,512" style="fill:#c87736;stroke:#c87736;stroke-width:0" />
+			<polygon points="0,0 0,512 128,512" style="fill:#a32f3c;stroke:#a32f3c;stroke-width:0" />
+			<rect width="512" height="512" rx="20" style="fill:none;stroke:black;stroke-width: 20; " />
+		</svg>
+		<h2 class="logo_text">Prism Physical Therapy</h2>
 	</div>
+	<nav>
+		<!-- <a href="/" class:active={$page.path.includes(href)}>Home</a> -->
+		<a href="/" on:click={() => (currentPath = '/')} data-active={`${currentPath === '/'}`}>Home</a>
+		<a
+			href="/about"
+			on:click={() => (currentPath = '/about')}
+			data-active={`${currentPath === '/about'}`}>About</a
+		>
+		<!-- <a href="blog">Blog</a> -->
+		<!-- <a href="/videos">Videos</a> -->
+		<a href="/faq" on:click={() => (currentPath = '/faq')} data-active={`${currentPath === '/faq'}`}
+			>FAQ</a
+		>
+		<!-- <a
+			href="/contact"
+			on:click={() => (currentPath = '/contact')}
+			data-active={`${currentPath === '/contact'}`}>Contact Me</a
+		> -->
+	</nav>
 </header>
 
 <style>
-	.header {
+	header {
 		width: 100%;
-		/* height: 100px; */
-		box-shadow: var(--box-shadow-lvl1);
-	}
-	.logo_row {
+		/* box-shadow: var(--box-shadow-lvl1); */
 		display: flex;
+		flex-direction: row;
 		justify-content: space-between;
-		align-items: center;
-		height: 100%;
-		padding: 0 20px;
-		box-shadow: var(--box-shadow-lvl1);
-		--logo-height: 60px;
+		padding: 0 40px;
+		/* background-color: white; */
+		background-color: #323232;
+		box-sizing: border-box;
+		--text-color: white;
 	}
 	.logo {
 		display: flex;
+		justify-content: flex-start;
 		align-items: center;
-	}
-	.logo_img {
-		height: var(--logo-height);
-		width: auto;
+		height: 100%;
+		/* padding: 0 20px; */
+		/* box-shadow: var(--box-shadow-lvl1); */
+		--logo-height: 60px;
 	}
 	.logo_text {
 		font-family: var(--font);
 		margin-left: 20px;
-		font-size: 32px;
-		font-weight: 300;
+		font-size: 36px;
+		font-weight: 600;
+		/* color: var(--dark-blue); */
+		color: var(--text-color);
 	}
-	.account_btn {
-		height: var(--logo-height);
-		width: auto;
-		background: none;
-		border: none;
-		stroke-width: 1px;
-	}
-	.account_svg {
-		height: 45px;
-		width: auto;
-	}
-
 	nav {
+		box-sizing: border-box;
 		display: flex;
-		padding: 20px;
-		width: 100%;
-		border-top: 1px solid black;
+		align-items: center;
 	}
 	nav > a {
 		margin-left: 20px;
 		text-decoration: none;
-		color: black;
+		color: var(--text-color);
 		font-family: var(--font);
+		font-size: 1.25rem;
+	}
+	a[data-active='true'] {
+		border-bottom: 2px solid var(--text-color);
+		/* border-bottom: 2px solid black; */
+	}
+	nav > a:hover {
+		color: var(--orange);
+	}
+	[data-active='true']:hover {
+		color: var(--orange);
+		border-bottom: 2px solid var(--orange);
 	}
 </style>

@@ -1,0 +1,9 @@
+import { expect, test } from '@playwright/test';
+
+test('index page has expected h1', async ({ page }) => {
+	await page.goto('/');
+	// await expect(page.getByRole('heading', { name: 'Prism Physical Therapy' })).toBeVisible();
+	const h2 = await page.getByText('Prism Physical Therapy');
+	console.log('h2 :>> ', h2);
+	// await expect(await page.getByText('Prism Physical Therapy').toBeVisible());
+});
