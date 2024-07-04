@@ -3,14 +3,23 @@
 </script>
 
 <Container>
-	<Title style="margin: 0 auto; box-sizing:border-box; padding: 20px;">FAQ</Title>
+	<Title
+		style="
+		margin: 0 auto; 
+		box-sizing:border-box; 
+		padding: 20px;
+		max-width: 80%;
+		"
+	>
+		FAQ
+	</Title>
 </Container>
 
 <Accordion
 	radius="md"
 	chevronPosition="left"
 	variant="contained"
-	style="width:80%; margin: 0 auto;"
+	style="width:80%; margin: 0 auto;margin-bottom: 40px;"
 >
 	<Accordion.Item value="WhatIDo">
 		<div slot="control" style="font-size: 1.25rem;">What Does a Physical Therapist Do?</div>
@@ -126,3 +135,6 @@
 		</p>
 	</Accordion.Item>
 </Accordion>
+
+<style>
+</style>

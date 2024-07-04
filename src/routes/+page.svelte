@@ -1,6 +1,8 @@
 <script>
 	import { enhance } from '$app/forms';
 	import { Button, Checkbox, Input, Radio, RadioGroup } from '@svelteuidev/core';
+	import { onMount } from 'svelte';
+	import { browser } from '$app/environment';
 	const inputOverride = {
 		width: '100%',
 		marginBottom: '20px',
@@ -9,10 +11,37 @@
 	};
 
 	let missing = true;
+	onMount(() => {
+		if (browser) {
+			/* 1. define variables */
+			var me = 'name';
+			var place = 'host.tld';
+
+			/* 2. find email link to replace */
+			var elink = document.getElementById('mlink');
+
+			/* 3. replace link href with variables  */
+			if (elink) {
+				elink.href = `mailto:gina@whidbeyprismpt.com`;
+			}
+		}
+	});
 </script>
 
 <h2>Pardon our dust!</h2>
 <h1>Coming soon, Prism Physical Therapy website and clinic.</h1>
+
+<p>
+	We're located in Clinton, Washington. If you would like to chat with Gina, the owner, scheduler
+	and physical therapist or or have us keep you up to date on our progress, Feel free to drop Gina
+	an email at: <a id="mlink" href="#">gina@whidbeyprismpt.com</a>.
+</p>
+
+<p>
+	If by any chance you tried to submit your email to us through our contact form before July 3rd,
+	please send Gina an email. The contact form wasn't actually sending us people's email address
+	correctly and we'd still love to be able to reach out and help you!
+</p>
 
 <!-- <p>
 	We're located in Clinton, Washington. If you would like to join our non-spammy mailing list for

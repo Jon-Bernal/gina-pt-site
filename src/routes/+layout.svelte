@@ -12,7 +12,7 @@
 		<main>
 			<slot />
 		</main>
-		<!-- <Footer /> -->
+		<Footer />
 	</div>
 </SvelteUIProvider>
 
@@ -33,12 +33,12 @@
 		flex-direction: column;
 		min-height: 100vh;
 		max-width: 100vw;
-		padding-bottom: 40px;
 	}
 	* {
 		box-sizing: border-box !important;
 	}
 	main {
 		padding: 0 10%;
+		flex-grow: 1;
 	}
 </style>

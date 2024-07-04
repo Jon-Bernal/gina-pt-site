@@ -1,26 +1,32 @@
 <script></script>
 
 <footer>
-	<a href="/toc">Terms of Service</a>
-	<a href="/sitemap">Sitemap</a>
-	<a href="/legal">Disclaimers</a>
-	<a href="/contact">Contact Me</a>
-	<a href="/blog">Blog</a>
-	<a href="/vids">Videos</a>
+	<div>
+		<h4>Hours</h4>
+		<p>Mon - Fri 9am - 5pm</p>
+	</div>
+	<div></div>
+	<div>
+		<h4>Contact</h4>
+		<span> Email: </span>
+		<a href="mailto:gina@whidbeyprismpt.com">gina@whidbeyprismpt.com</a>
+	</div>
 </footer>
 
 <style>
 	footer {
 		padding: 40px 20%;
-		background: #fce3a0;
+		background: var(--dark-blue);
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
 	}
-	footer > a {
-		/* color: var(--link-color); */
+	h4,
+	a,
+	p,
+	span {
+		color: white;
 		text-decoration: none;
 		cursor: pointer;
-		margin: 10px;
 	}
 </style>
