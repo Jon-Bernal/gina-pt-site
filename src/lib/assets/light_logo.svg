@@ -1,0 +1,13 @@
+ <svg  viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="background: none;">
+  <!-- Right Side -->
+  <polygon points="20,20 492,128 492,20" style="fill:#55b6fe;stroke:#55b6fe;stroke-width:0" />
+  <polygon points="20,20 492,256 492,128" style="fill:#1a5ab1;stroke:#1a5ab1;stroke-width:0" />
+  <polygon points="20,20 492,256 492,384" style="fill:#0f115d;stroke:#0f115d;stroke-width:0" />
+  <polygon points="20,20 492,492 492,384" style="fill:#c7cfa8;stroke:#c7cfa8;stroke-width:0" />
+  <!-- Bottom -->
+  <polygon points="20,20 492,492 384,492" style="fill:#c3bf53;stroke:#c3bf53;stroke-width:0" />
+  <polygon points="20,20 256,492 384,492" style="fill:#c28944;stroke:#c28944;stroke-width:0" />
+  <polygon points="20,20 128,492 256,492" style="fill:#c87736;stroke:#c87736;stroke-width:0" />
+  <polygon points="20,20 20,492 128,492" style="fill:#a32f3c;stroke:#a32f3c;stroke-width:0" />
+  <rect width="492" height="492" x="10" y="10" rx="58" stroke-linejoin="round" style="fill:none; stroke:white; stroke-width: 20;" />
+</svg> 
